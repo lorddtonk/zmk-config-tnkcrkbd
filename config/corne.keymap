@@ -45,7 +45,7 @@
                         bindings = <
    &kp  TAB  &kp EXCL     &kp AT       &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp LS(N8)  &kp LS(N9) &kp RPAR &kp BSPC
    &kp LSHFT &kp NUBS     &kp C_VOL_UP &kp C_PP   &trans   &trans     &kp EXCL  &kp EQUAL &kp LBKT    &kp RA(LBKT)  &kp PIPE &kp GRAVE
-   &kp LCTRL &kp LS(NUBS) &kp C_VOL_DN &trans   &trans   &trans       &trans       &kp UNDER &kp PLUS  &trans  &kp SQT  &kp BSLH &kp TILDE
+   &kp LCTRL &kp LS(NUBS) &kp C_VOL_DN &trans   &trans   &trans       &kp RA(SQT)  &kp UNDER &kp PLUS  &trans  &kp SQT  &kp BSLH &kp TILDE
                         &kp LGUI      &trans   &mt LALT SPACE       &kp RET   &trans    &kp RSHFT
 
                         >;
