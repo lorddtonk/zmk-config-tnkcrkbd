@@ -24,13 +24,13 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB | F1  | F2  | F3  | F4  | F5  |        |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR|  1  |  2  |  3  |  4  |  5  |        |  +  | UP  |  *  |   / |     | RALT |
-// | SHFT |     |     |     | DEL |PSCRN|        | LFT | DWN | RGT |   . |     |  ESC |
+// | SHFT |  1  |  2  |  3  |  4  |  5  |        |  +  | UP  |  *  |   / |  F9 | RALT |
+// |LCTRL |  F6 | F7  |  F8 | DEL |PSCRN|        | LFT | DWN | RGT |   . | F10 |  ESC |
 //                    | GUI |     | SPC |        | ENT |     | SHFT |
                         bindings = <
    &kp TAB    &kp F1  &kp F2 &kp F3 &kp F4 &kp F5     &kp N6   &kp N7   &kp N8    &kp N9     &kp N0    &kp BSPC
-   &kp LSHFT  &kp N1  &kp N2 &kp N3 &kp N4 &kp N5     &kp RBKT  &kp UP  &kp RBRC  &kp LS(N7) &kp PG_UP &trans
-   &kp LCTRL  &trans  &trans &trans &kp DEL &kp PSCRN  &kp LEFT &kp DOWN &kp RIGHT &trans     &kp PG_DN &trans
+   &kp LSHFT  &kp N1  &kp N2 &kp N3 &kp N4 &kp N5     &kp RBKT  &kp UP  &kp RBRC  &kp LS(N7) &kp F9    &trans
+   &kp LCTRL  &kp F6  &kp F7 &kp F8 &kp DEL &kp PSCRN &kp LEFT &kp DOWN &kp RIGHT &trans     &kp F10   &trans
                &kp LGUI  &trans  &mt LALT SPACE       &kp RET  &trans   &kp RSHFT
 
                         >;
@@ -39,17 +39,16 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !   |  ""     |  #  |  $  |  %  |   |  &   |    /  |  (  |  )   |  =  | BSPC |
-// | CTRL |   <  |  vol̉+   |play |     |     |   | !    |  ¿ =  |  '  |  [   |  ]| |`     |
-// | SHFT |   >  |   vol-  |     |     |     |   | ? _  |  ¡ +  |¨ {  |  }   | } \ | ° ~  |
-//                         | GUI |     | SPC |   | ENT |     | SHFT|
+// | CTRL |   <  |  vol̉+   |play | F11 | F12 |   | !    |  ¿ =  |  '  |  [   |  ]| |`     |
+// | SHFT |   >  |   vol-  |     |     |     |   |   ^  |  ¡ +  |¨ {  |  }   | } \ | ° ~  |
+//                         | GUI |     | SPC |   | ENT  |       | SHFT|
                         bindings = <
-   &kp  TAB  &kp EXCL     &kp AT       &kp HASH &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp LS(N8)  &kp LS(N9) &kp RPAR &kp BSPC
-   &kp LSHFT &kp NUBS     &kp C_VOL_UP &kp C_PP   &trans   &trans     &kp EXCL  &kp EQUAL &kp LBKT    &kp RA(LBKT)  &kp PIPE &kp GRAVE
-   &kp LCTRL &kp LS(NUBS) &kp C_VOL_DN &trans   &trans   &trans       &kp RA(SQT)  &kp UNDER &kp PLUS  &trans  &kp SQT  &kp BSLH &kp TILDE
-                        &kp LGUI      &trans   &mt LALT SPACE       &kp RET   &trans    &kp RSHFT
+   &kp  TAB  &kp EXCL     &kp AT       &kp HASH  &kp DLLR &kp PRCNT    &kp CARET &kp AMPS  &kp LS(N8)  &kp LS(N9)    &kp RPAR &kp BSPC
+   &kp LSHFT &kp NUBS     &kp C_VOL_UP &kp C_PP  &trans   &trans       &kp EXCL  &kp EQUAL &kp LBKT    &kp RA(LBKT)  &kp PIPE &kp GRAVE
+   &kp LCTRL &kp LS(NUBS) &kp C_VOL_DN &trans    &trans   &trans       &kp RA(SQT) &kp UNDER &kp PLUS  &trans        &kp SQT  &kp BSLH &kp TILDE
+                        &kp LGUI      &trans   &mt LALT SPACE          &kp RET   &trans    &kp RSHFT
 
                         >;
                 };
         };
 };
-
